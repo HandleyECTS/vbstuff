@@ -15,9 +15,9 @@ Module Headache
             For Each character As Char In count.ToString()
                 ' Randomly select a color from the allColors array
                 Dim randomColorIndex As Integer = random.Next(0, allColors.Length)
-                Console.ForegroundColor = allColors(randomColorIndex)
+                Console.BackgroundColor = allColors(randomColorIndex)
 
-                Console.Write(character)
+                Console.Write(" ")
 
             Next
 
